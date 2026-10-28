@@ -1,0 +1,11 @@
+{
+  "display_name": "正文配音（千问拆台词 → IndexTTS2 音色克隆）",
+  "loading_order": 123,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "h3",
+  "version": "1.0.0",
+  "homePage": "https://github.com/hhdsz0807/sillytavern-tts"
+}

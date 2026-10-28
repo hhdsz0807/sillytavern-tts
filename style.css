@@ -1,0 +1,39 @@
+#h3tts-dlg{
+  position:fixed;inset:0;margin:auto;z-index:9999;
+  width:min(920px,95vw);max-height:88vh;padding:0;border:1px solid #2b3646;border-radius:12px;
+  background:#0f141b;color:#d7dee9;font-size:13px;overflow:hidden;
+}
+#h3tts-dlg::backdrop{background:rgba(0,0,0,.6);}
+#h3tts-dlg header{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#141b24;border-bottom:1px solid #232d3b}
+#h3tts-dlg header b{font-size:15px}
+#h3tts-dlg header .sub{color:#7f8ea3;font-size:12px}
+#h3tts-dlg header button{margin-left:auto;background:none;border:0;color:#9aa8ba;font-size:16px;cursor:pointer}
+#h3tts-dlg .body{padding:12px 14px;overflow:auto;max-height:calc(88vh - 46px)}
+#h3tts-dlg .row{display:flex;align-items:center;gap:8px;margin:0 0 9px;flex-wrap:wrap}
+#h3tts-dlg .row label{min-width:56px;color:#8b98ab}
+#h3tts-dlg .row label.w{min-width:auto;margin-left:6px}
+#h3tts-dlg input,#h3tts-dlg select,#h3tts-dlg textarea{background:#0b1017;border:1px solid #2b3646;border-radius:8px;color:#d7dee9;padding:7px 9px;font-size:13px}
+#h3tts-dlg input[type=number]{width:66px}
+#h3tts-dlg .row input:not([type=number]){flex:1;min-width:0}
+#h3tts-dlg button.primary{background:#0e7490;border-color:#0e7490;color:#fff}
+#h3tts-dlg .hint{color:#8b98ab;font-size:12px}
+#h3tts-roles .row{gap:6px}
+#h3tts-lines{margin:10px 0;display:flex;flex-direction:column;gap:8px}
+#h3tts-lines .line{background:#0b1017;border:1px solid #222c3a;border-radius:8px;padding:8px}
+#h3tts-lines .lhead{display:flex;align-items:center;gap:8px;font-size:12px;color:#9aa8ba;margin-bottom:4px}
+#h3tts-lines .spk{color:#7dd3fc;font-weight:600}
+#h3tts-lines .emo{color:#f0abfc}
+#h3tts-lines .st{margin-left:auto}
+#h3tts-lines textarea{width:100%;resize:vertical;font-size:13px;line-height:1.5}
+#h3tts-lines audio{height:30px}
+#h3tts-lines .lerr{color:#e47373;font-size:12px;margin-top:4px}
+#h3tts-all audio{width:100%;margin-top:6px}
+#h3tts-all .dl{display:inline-block;margin-top:6px;color:#7dd3fc}
+.h3tts-status{min-height:20px;color:#8b98ab;font-size:12px;white-space:pre-wrap}
+.h3tts-status.ok{color:#6fcf97}
+.h3tts-status.err{color:#e47373}
+.h3tts-status.run{color:#e0b654}
+@media (max-width:520px){
+  #h3tts-dlg{width:96vw}
+  #h3tts-dlg .row input:not([type=number]){flex:1 1 100%}
+}
